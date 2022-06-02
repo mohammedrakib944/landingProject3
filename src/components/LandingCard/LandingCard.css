@@ -1,0 +1,53 @@
+.LandingCard {
+  max-width: 22rem;
+  min-width: 15rem;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 20px rgb(0 0 0 / 11%);
+  transition: 0.3s;
+  border: 1px solid rgba(221, 221, 221, 0.541);
+}
+.LandingCard:hover {
+  box-shadow: none;
+}
+.CardContent {
+  z-index: 10;
+}
+.LandingCardImg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+.CardContent > h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.CardContent > p {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--fontColor2);
+}
+.cardlink {
+  color: var(--fontColor);
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 3.5rem;
+  transition: 0.3s;
+}
+.cardlink:hover {
+  color: var(--primaryColor);
+}
+.cardlink i {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}

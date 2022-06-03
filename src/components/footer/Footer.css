@@ -1,0 +1,116 @@
+.footerWeapper {
+  width: 100%;
+  background: var(--footerColor);
+  color: rgb(221, 221, 221);
+  margin-top: 20px;
+  padding: 50px 0 30px 0;
+}
+
+.upperFooter {
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr 2fr;
+  grid-gap: 10px;
+}
+.footerTitle {
+  font-size: 1rem;
+  color: var(--yellow);
+}
+.aboutUs > p {
+  font-size: 14px;
+  text-align: justify;
+  padding-right: 20px;
+  color: var(--whiteText);
+}
+.footerMenuUl {
+  padding-left: 0px;
+}
+.footerMenuUl > li {
+  padding: 5px 0;
+}
+.footerMenuUl > li > a {
+  color: var(--whiteText);
+  font-size: 14px;
+  text-decoration: none;
+}
+.contactUs > h2 {
+  color: var(--yellow);
+  font-size: 1.5rem;
+}
+.fmm > i {
+  color: var(--yellow);
+  padding-right: 10px;
+  margin: 10px 0;
+}
+.fmm > span {
+  font-size: 14px;
+}
+
+.newsletter > input {
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background: none;
+  border: 1px solid var(--whiteText);
+  color: var(--whiteText);
+  margin-top: 20px;
+}
+.colorChange {
+  background: var(--yellow) !important;
+  font-weight: 600;
+  margin-top: 20px;
+  color: var(--footerColor) !important;
+}
+.colorChange:hover {
+  color: var(--whiteText) !important;
+}
+.footerMiddle {
+  border-top: 1px solid var(--whiteText);
+  margin-top: 50px;
+}
+.footerIcons {
+  width: 100%;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.footerIcons > a {
+  color: var(--whiteText);
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid;
+  background: var(--footerColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.downFooter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.downFooter > img {
+  width: 250px;
+}
+.downFooter > p {
+  color: rgb(197, 192, 192);
+  margin: 0;
+}
+@media only screen and (max-width: 967px) {
+  .upperFooter {
+    padding: 20px;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+  }
+  .downFooter {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

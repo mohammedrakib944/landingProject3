@@ -5,6 +5,7 @@
   --fontColor: #231f20;
   --fontColor2: #757575;
   --footerColor: #141948;
+  --whiteText: rgb(223, 219, 219);
   --yellow: #f7cb3b;
 }
 
@@ -21,8 +22,11 @@ li {
 a {
   text-decoration: none;
 }
+.active {
+  color: var(--primaryColor) !important;
+}
 .CustomBtn {
-  padding: 10px 30px;
+  padding: 7px 30px;
   border-radius: 30px;
   transition: 0.3s;
   border: 1.9px solid var(--text1);

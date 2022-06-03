@@ -10,8 +10,9 @@
 }
 .secondNav {
   transition: 0.3s;
-  background: var(--fontColor);
-  box-shadow: 0px 0px 10px #00000057;
+  background: #fff;
+  box-shadow: 0px 0px 50px #00000027;
+  padding: 5px 0;
 }
 .Logo {
   color: var(--primaryColor);
@@ -68,8 +69,8 @@
   }
   .navigation {
     width: 60%;
+    min-height: 100vh;
     background: #ffffff;
-    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -81,6 +82,8 @@
   }
   .showNav {
     display: block !important;
+    padding-left: 0px;
+    padding-right: 50px;
   }
   .navigation li {
     padding-bottom: 15px;
@@ -89,7 +92,7 @@
   .hideNavigation {
     position: fixed;
     width: 40%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(0 0 0 / 12%);
     top: 0;
     right: 0;

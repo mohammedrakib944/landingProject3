@@ -8,7 +8,6 @@ import Logo from "../../Assets/img/logo.svg";
 
 export default function Nav() {
   const [toggleButton, setToggleButton] = useState("hideNav");
-  const [toggleSetting, setToggleSetting] = useState("");
 
   window.onscroll = function () {
     const navi = document.querySelector(".navSection");
@@ -30,9 +29,9 @@ export default function Nav() {
                 >
                   <i className="fa-solid fa-bars"></i>
                 </button>
-                <a href="/">
+                <NavLink to="/">
                   <img src={Logo} alt="" className="logoImg" />
-                </a>
+                </NavLink>
               </div>
             </div>
             <div className="col-md-7">
@@ -42,7 +41,7 @@ export default function Nav() {
                   onClick={() => setToggleButton("hideNav")}
                 ></span>
                 <li>
-                  <a href="/">Home</a>
+                  <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
                   <a href="/tests">Tests</a>
@@ -57,9 +56,9 @@ export default function Nav() {
                   <a href="/aboutus">About Us</a>
                 </li>
                 <li>
-                  <a href="/login" className="CustomBtn">
+                  <NavLink to="/sign-in" className="CustomBtn">
                     Login/Signup
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>

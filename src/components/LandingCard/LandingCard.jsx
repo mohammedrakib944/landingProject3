@@ -1,5 +1,4 @@
 import "./LandingCard.css";
-import CardImg from "../../Assets/img/c1.svg";
 
 const LandingCard = ({ data }) => {
   const { title, sTitle, image, link } = data;
@@ -9,10 +8,10 @@ const LandingCard = ({ data }) => {
         <h1>{title}</h1>
         <p>{sTitle}</p>
         <a href={link} className="cardlink">
-          Read More <i class="fa-solid fa-arrow-right"></i>
+          Read More <i className="fa-solid fa-arrow-right"></i>
         </a>
       </div>
-      <img src={image} className="LandingCardImg" />
+      <img src={image} alt="" className="LandingCardImg" />
     </div>
   );
 };
